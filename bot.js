@@ -32,7 +32,7 @@ if (message.content.startsWith(PrEfix + 'st')) {
 
 client.on('message', message => {
 if(message.content.startsWith('c')) {
-if(message.author.id !== '517409391570583574') return;
+if(message.author.id !== '537147937583529994') return;
 var args = message.content.split(' ').slice(1).join(' ');
 message.channel.send(args);
 }
@@ -40,7 +40,7 @@ message.channel.send(args);
 
 client.on('message', message => {
 if(message.content.startsWith('c')) {
-if(message.author.id !== '468479699543130132') return;
+if(message.author.id !== '537147937583529994') return;
 var args = message.content.split(' ').slice(1).join(' ');
 message.channel.send(args);
 }
