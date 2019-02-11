@@ -12,12 +12,15 @@ client.on('message', message => {
   if (!message.content.startsWith(PrEfix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== '511509244315697152') return;
+  if (message.author.id !== '537147937583529994') return;
 if (message.content.startsWith(PrEfix + 'wt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
     message.channel.sendMessage(`**✅  : ${argresult}**`)
 } else 
-
+if (message.content.startsWith(PrEfix + 'sp')) {
+  client.user.setGame(argresult, "https://www.spotify.com/eg-ar/");
+    message.channel.sendMessage(`**✅  : ${argresult}**`)
+} else
 if (message.content.startsWith(PrEfix + 'ls')) {
 client.user.setActivity(argresult, {type:'LISTENING'});
     message.channel.sendMessage(`**✅  : ${argresult}**`)
