@@ -17,8 +17,8 @@ if (message.content.startsWith(PrEfix + 'wt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
     message.channel.sendMessage(`**✅  : ${argresult}**`)
 } else 
-if (message.content.startsWith(PrEfix + 'sp')) {
-  client.user.setGame(argresult, "https://www.spotify.com/eg-ar/");
+if (message.content.startsWith(PrEfix + 'pl')) {
+  client.user.setGame(argresult, "Playing");
     message.channel.sendMessage(`**✅  : ${argresult}**`)
 } else
 if (message.content.startsWith(PrEfix + 'ls')) {
