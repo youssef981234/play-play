@@ -17,10 +17,11 @@ if (message.content.startsWith(PrEfix + 'wt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
     message.channel.sendMessage(`**✅  : ${argresult}**`)
 } else 
-if (message.content.startsWith(PrEfix + 'pl')) {
-  client.user.setGame(argresult, "PLAYING");
-    message.channel.sendMessage(`**✅  : ${argresult}**`)
-} else
+if (message.content.startsWith(adminprefix + 'ply')) {
+    client.user.setGame(argresult);
+      message.channel.send("**:white_check_mark:: ``"
+   + `${argresult}` + "``**")
+  } else 
 if (message.content.startsWith(PrEfix + 'ls')) {
 client.user.setActivity(argresult, {type:'LISTENING'});
     message.channel.sendMessage(`**✅  : ${argresult}**`)
