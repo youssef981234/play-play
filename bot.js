@@ -19,9 +19,9 @@ client.user.setActivity(argresult, {type:'WATCHING'});
 } else 
 if (message.content.startsWith(adminprefix + 'ply')) {
     client.user.setGame(argresult);
-      message.channel.send("**:white_check_mark:: ``"
+      message.channel.send("**:white_check_mark: | The Playing Status Has Been Changed To : ``"
    + `${argresult}` + "``**")
-  } else 
+  } else  
 if (message.content.startsWith(PrEfix + 'ls')) {
 client.user.setActivity(argresult, {type:'LISTENING'});
     message.channel.sendMessage(`**✅  : ${argresult}**`)
