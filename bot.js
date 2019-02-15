@@ -18,7 +18,7 @@ client.user.setActivity(argresult, {type:'WATCHING'});
     message.channel.sendMessage(`**✅  : ${argresult}**`)
 } else 
 if (message.content.startsWith(PrEfix + 'pl')) {
-  client.user.setGame(argresult, "Playing");
+  client.user.setGame(argresult, "PLAYING");
     message.channel.sendMessage(`**✅  : ${argresult}**`)
 } else
 if (message.content.startsWith(PrEfix + 'ls')) {
